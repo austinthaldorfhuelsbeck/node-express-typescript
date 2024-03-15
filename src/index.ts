@@ -1,16 +1,13 @@
-import express, { Request, Response } from "express";
+import dotenv from "dotenv";
+import { app } from "./app";
 
-const app = express();
-const port = process.env.PORT || 8080;
+dotenv.config();
 
-app.get("/", (_req: Request, res: Response) => {
-  return res.send("Express on Vercel!");
-});
+if (!process.env.PORT) {
+  throw new Error("Missing required environment variables.");
+}
+const PORT: number = parseInt(process.env.PORT as string, 10);
 
-app.get("/ping", (_req: Request, res: Response) => {
-  return res.send("pong 🏓");
-});
-
-app.listen(port, () => {
-  return console.log(`Server is listening on ${port}`);
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
