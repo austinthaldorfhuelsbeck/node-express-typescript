@@ -1,10 +1,15 @@
-# Getting Started
+# Typescript Express Server Boilerplate
 
-## Prerequisites
+This is a simple boilerplate for starting a Typescript Express server application, optimized for quick deployment with Vercel serverless functions.
+It includes basic setup for CORS, dotenv for environment variables, and structured organization for your TypeScript files.
+
+## Getting Started
+
+### Prerequisites
 
 * Node.js installed on your machine.
 
-## Installation
+### Installation
 
 1. Clone the repository to your local machine.
 2. Install dependencies by running:
@@ -13,7 +18,7 @@
 npm install
 ```
 
-## Environment Variables
+### Environment Variables
 
 Create a `.env` file in the root directory and specify the port number:
 
@@ -21,7 +26,7 @@ Create a `.env` file in the root directory and specify the port number:
 PORT=your_preferred_port_number
 ```
 
-## Running the Server
+### Running the Server
 
 To start the server, run:
 
@@ -31,7 +36,7 @@ npm start
 
 The server will start, and you'll see a console log with the port number it's running on.
 
-# Structure
+## Structure
 
 The code is organized into folders for `controllers`, `middleware`, `routes`, and `services`, each containing TypeScript files named according to their function.
 This structure is designed to support versioning and maintainability.
@@ -42,7 +47,7 @@ This structure is designed to support versioning and maintainability.
 
 * Sample Route: A hello route is provided as an example of the code organization.
 
-# Dependencies
+## Dependencies
 
 This boilerplate uses the following NPM packages:
 
@@ -60,7 +65,7 @@ This boilerplate uses the following NPM packages:
 
 * `ts-node` (for running TypeScript files directly)
 
-# Usage
+## Usage
 
 The boilerplate is ready to be deployed to Vercel or used locally for development.
 You can expand it by adding more routes, controllers, middleware, and services according to your application's needs.
